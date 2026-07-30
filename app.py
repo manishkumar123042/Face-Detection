@@ -55,10 +55,8 @@ cascade_path = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 face_detector = cv2.CascadeClassifier(cascade_path)
 
 if face_detector.empty():
-    st.error("❌ Failed to load Haar Cascade XML file.")
+    st.error("Failed to load Haar Cascade XML file.")
     st.stop()
-face_detector = cv2.CascadeClassifier(cascade_path)
-
 # -----------------------------------
 # Upload Image
 # -----------------------------------
